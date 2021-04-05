@@ -7,7 +7,7 @@ This is an alpha version, so it contents some bugs. Please report all bugs, so I
 
 ### Installing
 1. Fork this repo with the `Fork` button (right corner)
-2. Customize the style.css or index.html however you want. 
+2. Customize the `style.css` or `index.html` however you want. 
 
 
 ## Authors
