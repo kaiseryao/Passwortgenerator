@@ -1,7 +1,8 @@
 # Passwortgenerator
 Alpha Version of my passwort generator
 
-## Please note
+## Get started
+### Please note
 This is an alpha version, so it contents some bugs. Please report all bugs, so I can fix them quicker.
 
 ### Installing
