@@ -1,7 +1,7 @@
-<!--TODO! 
-    - Slide, wie sicher ist das Passwort
-    - bessere Kopiermöglichkeiten
-    - Benutzername Generator -->
+<!--Coming features: 
+    - Bar, how safe the password is
+    - more customizable options
+    - nickname generator -->
     
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YWK - Passwortgenerator</title>
+    <title>Passwordgenerator</title>
 
     <meta content="" name="description">
     <meta content="" name="keywords">
@@ -39,21 +39,21 @@
 
 
 
-    <h1>YWK Passwortgenerator</h1>
+    <h1>Passwordgenerator</h1>
     <hr>
     <br>
     <br>
     <box-icon type='solid' name='lock-alt' color="#fff" size="60px" ></box-icon>
     <input type="text" id="genPasswort" disabled style="width: 450px;font-size: 35px;display:inline-block;margin-right:10px;">
 
-    <input type="button" value="kopieren" onclick="copyText();" id="copybutton" style="display:inline-block;"/>
+    <input type="button" value="copy" onclick="copyText();" id="copybutton" style="display:inline-block;"/>
 
     <br>
     <br>
     <article class="settings">
-      <h2>Wähle deine Einstellungen aus:<h2>
+      <h2>Choose your settings:<h2>
       
-      <h3>Passwortlänge</h3>
+      <h3>length</h3>
       <input type="number" id="value" min="1" max="50" value="9" style="text-align: center;">
 
       <input type="range" id="länge" name="volume"
@@ -62,37 +62,31 @@
       <br>
 
       <input type="checkbox" id="grossbuchstaben" checked onclick="getPassword();">
-      <label for="grossbuchstaben">Grossbuchstaben</label>
+      <label for="grossbuchstaben">capital letters</label>
 
       <input type="checkbox" id="kleinbuchstaben" checked onclick="getPassword();">
-      <label for="kleinbuchstaben">Kleinbuchstaben</label>
+      <label for="kleinbuchstaben">lowercase letters</label>
 
       <input type="checkbox" id="zahlen" checked onclick="getPassword();">
-      <label for="zahlen">Zahlen</label>
+      <label for="zahlen">numbers</label>
 
       <input type="checkbox" id="sonderzeichen" onclick="getPassword();">
-      <label for="sonderzeichen">Sonderzeichen</label>
+      <label for="sonderzeichen">symbols</label>
 
     </article>
 
     <br>
-    <input type="button" value="Generieren" onclick="getPassword();" id="passwortbutton"/>
+    <input type="button" value="create" onclick="getPassword();" id="passwortbutton"/>
 
-    <input type="button" value="Passwort kopieren" onclick="copyText();" id="copybutton" style="display: none;"/>
+    <input type="button" value="copy password" onclick="copyText();" id="copybutton" style="display: none;"/>
 
     <br>
     <br>
     <br>
-    <p style="display:inline-block;margin-right:10px;">By <a href="https://ywk.ch">YWK</a></p>
-    <p style="display:inline-block;"><a href="https://ywk.ch/impressum">Impressum</a></p>
+    <p style="display:inline-block;margin-right:10px;">By <a href="https://github.com/kaiseryao/Passwortgenerator">YWK</a></p>
 
 
 </body>
   <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
   <script src="main.js"></script>
-  <script>
-    if (window.location.protocol === "http:") {
-      location.href = "https://passwort.ywk.ch"
-    }
-  </script>
 </html>
